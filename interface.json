@@ -1,0 +1,55 @@
+{
+  "name": "my-project",
+  "features": {
+    "stateful": false,
+    "streaming": false,
+    "version": 0
+  },
+  "version": "0.0.0",
+  "format": 1,
+  "wellknown": [],
+  "types": {},
+  "components": {
+    "concatenate": {
+      "name": "concatenate",
+      "inputs": {
+        "left": {
+          "type": "string"
+        },
+        "right": {
+          "type": "string"
+        }
+      },
+      "outputs": {
+        "output": {
+          "type": "string"
+        }
+      }
+    },
+    "greet": {
+      "name": "greet",
+      "inputs": {
+        "input": {
+          "type": "string"
+        }
+      },
+      "outputs": {
+        "output": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "config": {
+    "concatenate": {
+      "type": "struct",
+      "name": "Config",
+      "fields": {}
+    },
+    "greet": {
+      "type": "struct",
+      "name": "Config",
+      "fields": {}
+    }
+  }
+}
